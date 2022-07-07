@@ -101,11 +101,10 @@
     }
     .lista-menu__link--desktop a{
         text-decoration: none;
+        color: var(--roxo);
     }
 
-    .lista-menu__link--desktop a:hover{
-        background: var(--roxo-degrade);
-    }
+   
 
    
 }
