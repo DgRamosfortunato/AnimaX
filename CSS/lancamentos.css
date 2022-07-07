@@ -1,0 +1,78 @@
+
+
+
+.container__animes--boruto {
+    background: url("../imagens/boruto\ __cena.png") no-repeat  ;
+    background-size: cover;
+    height: 25vh;
+    padding: .5em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: .5em 0;
+}
+
+.container__tempo{
+    background: url('../imagens/relogio.png') no-repeat;
+    background-position: 3.5em;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container__titulo--anime{
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+
+
+.container__animes--dbz{
+    background: url('../imagens/dbz__cena.png');
+    background-size: cover;
+    height: 25vh;
+    padding: .5em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: .5em 0;
+}
+
+.container__animes--shingeki{
+    background: url('../imagens/shingeki.png');
+    background-size: cover;
+    height: 25vh;
+    padding: .5em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: .5em 0;
+}
+
+.container__animes--naruto{
+    background: url('../imagens/naruto.png');
+    background-size: cover;
+    height: 25vh;
+    padding: .5em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: .5em 0;
+}
+
+@media screen and (min-width:1024px) {
+    .container__titulo--anime , .container__tempo{
+        font-size: 40px;
+    }
+   
+}
+

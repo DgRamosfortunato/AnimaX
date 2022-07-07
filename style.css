@@ -1,0 +1,12 @@
+@import url(CSS/header.css);
+@import url(CSS/banner.css);
+@import url(CSS/carrossel.css);
+@import url(CSS/lancamentos.css);
+@import url(CSS/footer.css);
+:root{
+    --roxo-degrade:  linear-gradient(to right bottom, #411c59, #402265, #3c2872, #352f7f, #27368c);;
+    --branco:#ffffff;
+    --roxo:#411C59;
+    --fonte-principal: "Poppins";
+}
+

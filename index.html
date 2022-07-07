@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+</head>
+<body>
+    <header class="menu">
+       <div class="container">
+        <input type="checkbox" name="menu" id="menu" class="container__botao">
+        <label for="menu">
+            <span class="cabecalho__menu--hamburguer"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__link">
+                <a href="#">Lançamentos</a>
+            </li>
+            <li class="lista-menu__link">
+                <a href="#">Filmes</a>
+            </li>
+            <li class="lista-menu__link">
+                <a href="#">Dublados</a>
+            </li>
+            <li class="lista-menu__link">
+                <a href="#">Mangas</a>
+            </li>
+        </ul>
+        <div class="menu__desktop">
+            <h1 class="container__titulo">Anime<b class="container__titulo--roxo">x</b></h1>
+            <ul class="lista-menu--desktop">
+                <li class="lista-menu__link--desktop">
+                    <a href="#">Lançamentos</a>
+                </li>
+                <li class="lista-menu__link--desktop">
+                    <a href="#">Filmes</a>
+                </li>
+                <li class="lista-menu__link--desktop">
+                    <a href="#">Dublados</a>
+                </li>
+                <li class="lista-menu__link--desktop">
+                    <a href="#">Mangas</a>
+                </li>
+               </a>
+               </div>
+        </div>
+       </div> 
+       <div class="container__fav">
+            <a href="#" class="container__img"><img src="imagens/favorito.png" alt=""></a>
+            <a href="#" class="container__img"> <img src="imagens/usuario.png" alt=""></a>
+       </div>
+    </header>
+
+    <section class="banner">
+        <h1 class="banner__titulo">AnimeX</h1>
+        <p class="banner__texto">O melhor conteudo de animes!!</p>
+        <input type="search" placeholder="Qual seu proximo anime?" class="banner__pesquisa">
+    </section>
+
+    <section class="carrossel">
+        <div class="container__carrossel">
+            <h2 class="carrosel__titulo">Destaques</h2>
+            <a href="#" class="carrossel__button">Ver mais</a>
+        </div>
+
+        
+        <div class="carrossel__swiper">
+          
+        <!-- Slider main container -->
+        
+        <div class="carrossel__container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="imagens/attack on titan.png" alt="anime attack on titan"></div>
+                <div class="swiper-slide"><img src="imagens/boku no hero.png" alt="anime boku no hero "></div>
+                <div class="swiper-slide"><img src="imagens/boruto.png" alt="anime boruto"></div>
+                <div class="swiper-slide"><img src="imagens/one piece.png" alt="anime /one piece"></div>
+                <div class="swiper-slide"><img src="imagens/bleach.png" alt="anime /one piece"></div>
+                <div class="swiper-slide"><img src="imagens/Jujutsu-Kaisen.png" alt="anime /one piece"></div>
+                <div class="swiper-slide"><img src="imagens/demon slayer.png" alt="anime /one piece"></div>
+                <div class="swiper-slide"><img src="imagens/Lost-Canvas.PNG" alt="anime /one piece"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        </div>
+
+        <section class="carrossel">
+            <div class="container__carrossel">
+                <h2 class="carrosel__titulo">Lançamentos</h2>
+                <a href="#" class="carrossel__button">Ver mais</a>
+            </div>
+
+    </section>
+
+    <section class="conteiner__lancamentos">
+        <div class="container__animes--boruto">
+            <p class="container__tempo">24min</p>
+            <h2 class="container__titulo--anime">Boruto</h2>
+        </div>
+        <div class="container__animes--dbz">
+            <p class="container__tempo">24min</p>
+            <h2 class="container__titulo--anime">Dragon Ball Super</h2>
+        </div>
+        <div class="container__animes--shingeki">
+            <p class="container__tempo">24min</p>
+            <h2 class="container__titulo--anime">Shingeki no kyojin</h2>
+        </div>
+        <div class="container__animes--naruto">
+            <p class="container__tempo">24min</p>
+            <h2 class="container__titulo--anime">Naruto</h2>
+        </div>
+    </section>
+
+   <footer class="footer">
+    <h2 class="footer__titulo">Site criado por Diego Ramos</h2>
+      <ul class="footer__lista">
+        <li> <a href="https://wa.me/5521965265275" target="_blank"><img src="imagens/whatsapp.png" alt=""></a></li>
+        <li><a href="https://www.linkedin.com/in/diego-ramos-683798207/" target="_blank"><img src="imagens/linkedin.png" alt=""></a></li>
+      </ul>
+
+      <ul class="footer__lista--desktop">
+        <li> <a href="https://wa.me/5521965265275" target="_blank"><img src="imagens/whatsapp-desktop.png" alt=""></a></li>
+        <li><a href="https://www.linkedin.com/in/diego-ramos-683798207/" target="_blank"><img src="imagens/linkedin--desktoop.png" alt=""></a></li>
+      </ul>
+
+      
+      
+   </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

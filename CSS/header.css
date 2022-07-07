@@ -1,0 +1,134 @@
+.cabecalho__menu--hamburguer{
+    background-image: url(../imagens/menu-aberto.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+.menu{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 0.5em ;
+}
+
+.container__img{
+    padding: 0.5em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;/* se movimento de acordo com o pai*/
+    top: 100%; /*Para ficar mais em baixo, ele tira 100% do cabeçalho*/
+    width: 50vw;
+    
+}
+
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu__link{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__link a{
+    text-decoration: none;
+    color: var(--roxo);
+    text-transform:uppercase ;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    padding: 5em 0;
+    font-size: 18px;
+}
+
+.container__botao{
+    display: none;
+}
+
+.menu__desktop{
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .container__titulo{
+        font-size: 40px;
+        font-family: var(--fonte-principal);
+        text-transform: uppercase;
+        color: var(--roxo);
+        font-weight: 700;
+        padding: 0 1em;
+        
+    }
+
+    .cabecalho__menu--hamburguer{
+        display: none;
+    }
+
+    .menu__desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .lista-menu--desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .lista-menu__link--desktop{
+        padding: .5em;
+        color: var(--roxo);
+        font-family: var(--fonte-principal);
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .lista-menu__link--desktop a{
+        text-decoration: none;
+    }
+
+    .lista-menu__link--desktop a:hover{
+        background: var(--roxo-degrade);
+    }
+
+   
+}
+
+@media screen and (min-width:1728px) {
+    .menu{
+        background: var(--roxo-degrade);
+       
+    }
+
+    .container__titulo{
+        color: var(--branco);
+        font-size: 50px;
+    }
+
+    .lista-menu__link--desktop a{
+        color: var(--branco);
+        font-size: 35px;
+    }
+    .container__fav{
+        display: none;
+    }
+}
+
+
+

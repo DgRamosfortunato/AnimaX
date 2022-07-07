@@ -1,0 +1,37 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.footer__lista{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.footer__titulo{
+    color: var(--roxo);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    margin: 1em;
+}
+.footer__lista--desktop{
+    display: none;
+}
+
+@media screen and (min-width:1024px){
+    .footer__titulo{
+        font-size: 36px;
+    }
+    .footer__lista{
+        display: none;
+    }
+
+    .footer__lista--desktop{
+        display: flex;
+    }
+}

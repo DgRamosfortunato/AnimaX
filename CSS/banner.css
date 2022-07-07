@@ -1,0 +1,73 @@
+.banner{
+    background: var(--roxo-degrade);
+    padding: 1em 2.5em;
+}
+
+.banner__titulo{
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--font-principal);
+    padding: .2em 0;
+    color: var(--branco);
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px  rgba(0, 0, 0, 0.817);
+}
+
+.banner__texto{
+    text-align: center;
+    padding: 1em 1em;
+    font-size: 1.4em;
+    color:var(--branco) ;
+    font-family: var(--font-principal);
+    text-transform: uppercase;
+}
+
+.banner__pesquisa{
+    background-color: transparent;
+    width: 100%;
+    border-radius: 24px;
+    padding: .6em;
+    margin-bottom: 18px;
+    border: 2px solid var(--branco);
+    font-family: var(--font-principal);
+    font-size: 1em;
+    color: var(--branco);
+}
+
+.banner__pesquisa::placeholder{
+    color: var(--branco);
+    background : url("../imagens/lupa.png") no-repeat;
+    background-position: 1em;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+@media screen and (min-width:1024px) {
+    .banner__titulo{
+        display: none;
+    }
+
+    .banner__texto{
+       font-size: 30px;
+    }
+    .banner__pesquisa::placeholder {
+        font-size: 23px;
+    }
+    
+}
+
+@media screen and (min-width:1728px){
+    .banner__texto{
+        font-size: 40px;
+    }
+    .banner__pesquisa{
+        display: none;
+    }
+    .swiper{
+        width: 60%;
+    }
+    
+    
+}
+
